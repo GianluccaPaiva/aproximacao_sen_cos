@@ -1,0 +1,1 @@
+# aproximacao_sen_cos
