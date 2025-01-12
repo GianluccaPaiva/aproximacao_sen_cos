@@ -6,13 +6,13 @@ Este arquivo, em linguagem C++, tem como objetivo calcular a aproxima o de seno 
 
 ### Como funciona?
 
-A F rmula de Taylor consiste em uma s rie infinita, que converge para o valor exato do seno e cosseno. A Fórmula para seno   a seguinte:
+A Fórmula de Taylor consiste em uma série infinita, que converge para o valor exato do seno e cosseno. A Fórmula para seno é a seguinte:
 
-    $$sen(x) = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + ...$$
+$$sen(x) = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + ...$$
 
-E a F rmula para cosseno   a seguinte:
+E a Fórmula para cosseno   a seguinte:
 
-    $$cos(x) = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + ...$$
+$$cos(x) = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + ...$$
 
 ### Como usar?
 
@@ -34,7 +34,7 @@ Sen e cos de 60 com 2 termos:
     Sen(60) = 27222444060.000027222444060
     Cos(60) = 4101452486.7143
 
-/*************  ✨ Codeium Command ⭐  *************/
+
 # sin and cosine approximation
 
 ## Calculator of approximation of sin and cosine
@@ -45,11 +45,11 @@ This file, in C++ language, has as objective to calculate the approximation of s
 
 The Taylor Formula is an infinite series that converges to the exact value of sin and cosine. The formula for sin is the following:
 
-    $$sin(x) = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + ...$$
+$$sin(x) = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + ...$$
 
 And the formula for cosine is the following:
 
-    $$cos(x) = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + ...$$
+ $$cos(x) = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n}}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + ...$$
 
 ### How to use?
 
