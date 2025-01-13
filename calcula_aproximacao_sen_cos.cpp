@@ -14,7 +14,7 @@ double fatorial(int n){
 void sen(double x, int qtd){
     double sen = 0.0;
     for (int i = 0; i < qtd; i++) {
-        int sinal;
+        float sinal;
         if (i % 2 == 0) {
             sinal = 1;
         } else {
@@ -28,7 +28,7 @@ void sen(double x, int qtd){
 void cos(double x, int qtd){
     double cos = 0.0;
     for (int i = 0; i < qtd; i++) {
-        int sinal;
+        float sinal;
         if (i % 2 == 0) {
             sinal = 1;
         } else {
@@ -42,12 +42,30 @@ void cos(double x, int qtd){
 int main(){
     double x;
     int qtd;
+    char validacao = ' ';
     cout<<"Digite o angulo e a quantidade de extensão da função para calculo de sen e cos: ";
     cin>>x >> qtd;
+    while (true)
+    {
         cout<<"Sen e cos de "<<x<<" com "<<qtd<<" termos:"<<endl;
         sen(x, qtd);
         cos(x, qtd);
         cout<<endl;
-    
+        cout<<"Deseja continuar calculando? (s para sim e e para encerrar): ";
+        
+        cin>>validacao;
+        cout<<endl;
+        if(validacao == 'e'){
+            break;
+        }else if(validacao != 's'){
+            cout<<"Opção invalida!"<<endl;
+            cout<<"Deseja continuar calculando? (s para sim e e para encerrar): ";
+            cin>>validacao;
+            cout<<endl;
+        }else{
+        cout<<"Digite o angulo e a quantidade de extensão da função para calculo de sen e cos: ";
+        cin>>x >> qtd;
+        }
+    }
     return 0;
 }
